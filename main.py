@@ -74,7 +74,7 @@ class Video(Resource):
     def delete(self, video_id):
         video = VideoModel.query.filter_by(id=video_id)
         if not video:
-            abort(404, 'Video with that id not found, not deleted.')
+            abort(404, message='Video with that id not found, not deleted.')
 
         video.delete()
         db.session.commit()
