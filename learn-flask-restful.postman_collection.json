@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "b98ae44c-6d0d-4f2c-b78d-03c6880ee0bd",
+		"name": "learn-flask-restful",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "put_video0",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "likes",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Hello world...",
+							"type": "text"
+						},
+						{
+							"key": "views",
+							"value": "6000",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/video/0",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"video",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put_video1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "likes",
+							"value": "60000",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Kaise ho?",
+							"type": "text"
+						},
+						{
+							"key": "views",
+							"value": "9000",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/video/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"video",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put_video2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "likes",
+							"value": "4500",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "badhiya hain...",
+							"type": "text"
+						},
+						{
+							"key": "views",
+							"value": "652000",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/video/2",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"video",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_video",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "likes",
+							"value": "786",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "bahut acche hain...",
+							"type": "text"
+						},
+						{
+							"key": "views",
+							"value": "652000",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/video/255",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"video",
+						"255"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_video",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "likes",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "How are you...",
+							"type": "text"
+						},
+						{
+							"key": "views",
+							"value": "20000",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/video/0",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"video",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "del_video",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "likes",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "How are you...",
+							"type": "text"
+						},
+						{
+							"key": "views",
+							"value": "20000",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/video/0",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"video",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
